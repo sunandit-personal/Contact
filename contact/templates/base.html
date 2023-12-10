@@ -1,0 +1,47 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Welcome to Contact Project{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!--    <link rel="stylesheet" href="{% static 'css/style.css' %}">-->
+
+</head>
+<body>
+    <div class="container">
+
+    <!-- Header Row -->
+    <div class="row">
+        <div class="col">
+            <h1>Contact Project</h1>
+        </div>
+    </div>
+
+
+    <!-- Main Content Row -->
+    <div class="row">
+        <div class="col">
+
+            <!-- Content from child templates will go here -->
+            {% block content %}{% endblock %}
+
+        </div>
+    </div>
+
+
+    <!-- Copyright Notice Row -->
+    <div class="row">
+        <div class="col">
+            <p class="text-muted">© Contact Project Assignment 2023</p>
+        </div>
+    </div>
+
+
+</div>
+
+    <!-- Load bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
